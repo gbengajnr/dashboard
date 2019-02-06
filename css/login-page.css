@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+ *{
+    box-sizing: border-box;
+
+ }
+
+body{
+    background: url('/images/background.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto';
+}
+
+.scam-alert{
+    width: 100%;
+    padding: 1px ;
+    margin: 0 auto;
+    background: red;
+    font-family: 'roboto';
+    line-height: normal;
+    font-size: 11px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    text-align: center;
+    
+}
+.scam-text{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.navbar-brand{
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-left: 80px;
+    margin-bottom: 5px;
+}
+ 
+.nav-link {
+    font-family: 'Roboto';
+    line-height: normal;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: green !important;
+}
+
+.form-inline ul{
+    padding-top: 5px;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.nav-link:hover {
+  color: black !important;
+}
+
+.nav-item {
+    margin-right: 20px;
+    text-decoration-style: none;
+    display: inline-flex;
+}
+
+.phone-icon, .mail-icon, .card-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 0px;
+}
+
+/*body*/
+
+.formBox{
+    box-sizing: border-box;
+    width: 35%;
+    height: 60%;
+    margin: 0 auto;
+    position: relative; 
+    margin-top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(51, 51, 51, 0.2);
+    border-radius: 7px;
+    padding: 30px 60px;
+}
+
+.formBox h1 {
+    font-family: 'roboto';
+    line-height: normal;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: #08501C;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sign-in-btn {
+    background: #2A9E4A;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'roboto';
+    line-height: normal;
+    font-size: 13px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.formBox a {
+    color: #2A9E4A;
+    text-align: center;
+    margin: 0;
+    display: block;
+    margin-top: 10px;
+    font-family: 'roboto';
+    line-height: normal;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+}
+
+.formBox a:hover{
+    text-decoration: none;
+}
+
+.form-group input[type="email"], .form-group input[type="password"], .form-group input[type="number"]{
+    background: #F2FDF5;
+    border: none;
+    
+}
+
+.form-group{
+    font-size: 0.9em;
+}
+
+.form-group label{
+    color: #333333;
+    font-weight: bold;
+}
+
+.form-group span a{
+    float: right;
+    color: #333333;
+    font-weight: 500;
+    margin-top: 3px;
+    font-size: 0.9em;
+}
+
+.footer-text{
+    color: #FFFFFF;
+    font-family:'roboto';
+    line-height: normal;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    margin: 0px;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+
+.contact-icon{
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-flex;
+    background: #D2A50E;
+    border-radius: 3px;
+    float: right;
+    margin-right: 80px;
+    padding: 0px 30px;
+    height: 45px;
+}
+
+
+
+@media screen and (max-width: 1152px) {
+    .formBox{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .nav-item{
+        display: block;
+    }
+
+    .form-inline ul{
+        margin-top: 10px;
+        margin-left: -35px;
+    }
+
+    .form-inline .nav-link{
+        margin-top: -30px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+
+    .footer{
+        position: relative;
+        top: 76px;
+    }
+}
+
+@media screen and (max-width: 908px) {
+    .footer{
+        top: 63px;
+    }
+}
+
+@media screen and (max-width: 832px) {
+    .formBox{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 532px) {
+    .navbar{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .formBox{
+        width: 90%;
+    }
+
+    .footer{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 464px) {
+    .formBox{
+        width: 95%;
+        padding: 30px 20px;
+    }
+
+    .footer{
+        top: 50px;
+    }
+}
+
+@media screen and (max-width: 348px) {
+    .formBox{
+        width: 95%;
+        padding: 30px 10px;
+    }
+}
+
+@media screen and (max-width: 331px) {
+    .footer{
+        top: 37px;
+    }
+}
