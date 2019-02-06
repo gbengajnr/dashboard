@@ -1,0 +1,674 @@
+@font-face{
+    font-family: 'CircularStd-Book';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/CircularStd-Book.woff") format("opentype");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "CircularStd-Book", Arial, sans-serif;
+    font-size: .875rem;
+    background: #F7F8FA;
+}
+
+
+/* Navbar Starts Here */
+
+.navbar{
+    padding: 2px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
+}
+
+.navbar .logo{
+    margin-right: 2.7em;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: -1.6875px;
+    color: #1875F0;
+    padding-left: 20px;
+}
+
+input[type="submit"]{
+    background: #2A9E4A;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-family: "CircularStd-Book";
+    padding: 10px 15px 9px 15px;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    margin-right: 76px;
+   
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+/* Navbar Ends Here */
+
+/* Overlay */
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.55); /* Black background with opacity */
+    z-index: 2000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+
+/*Side Menu Starts Here*/
+
+
+.sidenav::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(197, 197, 197, 0.8);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(197, 197, 197, 0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(197, 197, 197, 0.8); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(197, 197, 197, 0.8); 
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 90px;
+    background: #ffffff;
+    transition: 0s;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    padding-top: 33px;
+    padding-right: 6px;
+    display: none;
+}
+.sidenav .closebtn:hover{
+    padding: 0px;
+    margin: 33px 6px 0px 30px;
+    background-color: #fff;
+}
+
+.open-sidenav{
+    display: none;
+}
+
+.carousel{
+    width: 100%;
+}
+
+.carousel-item{
+    padding-left: 25px;
+}
+
+.carousel-item .account-num{
+    color: #8D948F;
+    margin-bottom: 5px;
+}
+
+.carousel-item .account-bal{
+    color: #2A9E4A;
+    font-size: 1.9em;
+    margin-bottom: 0px;
+}
+
+.carousel-item .acc-bal-text{
+    margin-bottom: 45px;
+    color: rgba(130, 130, 130, 0.6);
+}
+
+.carousel-control-prev, .carousel-control-prev .fas{
+    display: none;
+}
+
+.carousel-control-next .fas{
+    margin-left: -75px;
+    margin-top: 26px;
+    font-size: 1.4em;
+    color:#2A9E4A;
+}
+
+.carousel-indicators{
+    margin-left: -124px;
+    margin-bottom: 10px;
+}
+
+.carousel-indicators li{
+    background: rgba(42, 158, 74, 0.3);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+.carousel-indicators li.active{
+    background: #2A9E4A;
+}
+
+.sidenav hr{
+    margin-top: 0px;
+}
+
+
+.sidenav a{
+    display: block;
+    color: #8D948F !important;
+    text-decoration: none;
+    padding: 10px 15px;
+    padding-right: 0px;
+    font-size: 0.845rem;
+    transition: all 0s ease-in-out;
+    margin-bottom: 15px;
+    padding-left: 25px !important;
+    cursor: pointer;
+    background: none;
+}
+
+.sidenav a.active{
+    background: rgb(24,117,240, 0.1);
+    border-left: 4px solid #1875F0;
+    padding: 10px 30px 10px 10px ;
+}
+.sidenav a.active:hover{
+    padding: 10px 30px 10px 10px;
+}
+.sidenav a:hover{
+    transition: all 0.3s ease-in-out;
+    padding: 10px 5px 10px 30px !important;
+    font-weight: bold;
+}
+
+.accordion .card-body{
+    padding: 0;
+    margin: 0;
+    margin-left: 45px;
+    margin-top: -13px;
+    margin-bottom: 15px;
+}
+
+.accordion .card-body a{
+    color: #2A9E4A !important;
+    margin-bottom: -5px;
+}
+.accordion .card-body a.fx{
+    margin-left: 2px;
+}
+
+.accordion .card-body a:hover{
+    background: none;
+    padding: 10px 5px 10px 25px !important;
+}
+
+.accordion .card-body a.act{
+    font-weight: bold;
+}
+
+.sidenav .utilities{
+    margin-top: 30px;
+    padding-left: 25px !important;
+    font-weight: bold;
+    color: #8D948F !important;
+}
+
+.sidenav a img{
+    margin-top: -5px;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.sidenav .sign-out{
+    margin-bottom: 40px;
+    color: #2A9E4A !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: none;
+}
+
+/*Icons styling  start*/
+
+.home-icon{
+    margin-right: 24px !important;
+    
+}
+
+.sidenav .buy-airtime img{
+    margin-top: -2px;
+    width: 25px;
+    height: 28px;
+    margin-right: 20px;
+}
+
+.sidenav .buy-data img{
+    width: 15px;
+    height: 23px;
+    margin-right: 30px;
+}
+
+.sidenav .transfer img{
+    width: 20px;
+    height: 16px;
+    margin-right: 25px;
+}
+
+.refresh-icon {
+    margin-right: 24px !important;
+}
+
+.internet-icon{
+    width: 20px;
+    height: 18px;
+    margin-right: 25px !important;
+}
+
+.electricity-icon{
+    width: 23px;
+    margin-right: 25px !important;
+}
+
+.television-icon{
+    width: 23px;
+    margin-right: 24px !important;
+    margin-left: 1px;
+}
+
+.toll-icon{
+    width: 23px;
+    margin-right: 24px !important;
+    margin-left: 1px;
+}
+
+.tools-icon{
+    width: 23px;
+    margin-right: 24px !important;
+    margin-left: 1px;
+}
+
+.credit-card-icon{
+    width: 23px;
+    margin-right: 24px !important;
+    margin-left: 1px;
+}
+
+.avatar-icon{
+    width: 20px !important;
+    margin-right: 24.5px !important;
+}
+
+.accordion hr{
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.manage-bene-text{
+    margin-bottom: 40px !important;
+}
+
+/*Side Menu Ends Here*/
+
+
+/*Main Page Starts Here*/
+
+.main{
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 210px; /* Same as the width of the sidenav */
+    padding: 0px;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.main-page-content{
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 44px;
+}
+
+.own-account-content{
+    background: #FFFFFF;
+    box-shadow: 1px 2px 10px rgba(79, 79, 79, 0.02);
+    border-radius: 7px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.own-account-content .title{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    margin: 0;
+    color: #08501C;
+}
+
+.own-account-content hr{
+    margin-top: 0px;
+}
+
+.form-box{
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 40px;
+}
+
+.form-group label{
+    color: #333333 !important;
+    font-weight: 600;
+}
+
+.form-group select, .form-group input{
+    background: #F2FDF5;
+    border: none;
+    font-size: 1em;
+}
+.form-group input{
+    width: 50%;
+}
+
+.form-group option.light-option{
+    color: rgba(130, 130, 130, 0.8);
+}
+
+.form-group option{
+    color: #545454;
+    
+}
+
+form .btn-submit{
+    margin-top: 30px;
+    background: #2A9E4A;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+
+
+.recent-trans-text{
+    font-size: 1.2em;
+}
+
+.table-responsive{
+    background: #FFFFFF;
+    box-shadow: 1px 2px 10px rgba(79, 79, 79, 0.02);
+    border-radius: 7px;
+    margin-top: -5px;
+    margin-bottom: 50px;
+}
+
+.table{
+    margin-bottom: 0px;
+}
+
+.table thead tr th{
+    border-bottom: 0.75px solid #D6E9DB !important;
+    padding: 6px !important;
+    padding-left: 25px !important;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.table thead tr th.hidden-col{
+    color: #fff;
+}
+
+.table tbody tr.stripped{
+    background: #FAFAFA;
+}
+
+.table tbody tr td{
+    padding-left: 25px !important;
+    font-size: 0.9em;
+}
+
+.table tbody tr td a{
+    color: #2A9E4A;
+    font-size: 0.85em;
+    border: 1px solid #2A9E4A;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+.table tbody tr td a:hover{
+    text-decoration: none;
+    color: #545454;
+    border: 1px solid #545454;
+}
+
+
+
+/*Main Page Ends Here*/
+
+
+
+/*Responsive Page Starts Here*/
+
+@media screen and (max-width: 1040px){
+
+    .form-box{
+        width: 70%;
+    }
+
+    .table{
+        width: 110%;
+    }
+
+}
+
+@media screen and (max-width: 969px){
+
+    .table{
+        width: 130%;
+    }
+
+}
+
+@media screen and (max-width: 858px){
+
+    .table{
+        width: 150%;
+    }
+
+}
+
+@media screen and (max-width: 777px){
+
+    .table{
+        width: 160%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .navbar-toggler{
+        display: none;
+    }
+    
+    .navbar .logo{
+        margin-left: 30px;
+    }
+    
+    .navbar-nav{
+        display: none;
+    }
+    
+    .sidenav{
+        width: 0px;
+        padding-top: 75px;
+        z-index: 2001;
+    }
+    .sidenav a:hover{
+        padding: 10px 0px 10px 15px;
+    }
+    
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn{
+        display: block;
+        padding-top: 0px;
+    }
+    .sidenav .closebtn:hover{
+        margin: 33px 6px 0px 30px;
+    }
+
+    .open-sidenav{
+        position: sticky;
+        color: #8D948F;
+        font-size: 28px;
+        z-index: 2000;
+        top: 9px !important;
+        margin-top: -52px;
+        left: 12px;
+        display: block;
+    }
+
+    .carousel{
+        width: 250px;
+    }
+    
+    .carousel-indicators{
+        margin-left: -142px;
+        margin-bottom: 10px;
+    }
+    
+    .carousel-indicators li{
+        background: rgba(42, 158, 74, 0.3);
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+    }
+    .carousel-indicators li.active{
+        background: #2A9E4A;
+    }
+    
+    .sidenav .sign-out{
+        display: block;
+    }
+    
+    .main{
+        margin-left: -8px; /* Same as the width of the sidenav */
+        width: 100%;
+    }
+
+    .table{
+        width: 110%;
+    }
+
+}
+
+@media screen and (max-width: 749px){
+
+    .table{
+        width: 130%;
+    }
+
+}
+
+@media screen and (max-width: 638px){
+
+    .table{
+        width: 150%;
+    }
+
+}
+
+@media screen and (max-width: 557px){
+
+    .form-box{
+        width: 85%;
+    }
+
+    .table{
+        width: 170%;
+    }
+
+}
+
+@media screen and (max-width: 495px){
+
+    .main-page-content{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+
+    .table{
+        width: 190%;
+    }
+
+}
+
+@media screen and (max-width: 383px){
+
+    .table{
+        width: 190%;
+    }
+
+    .table tbody tr td{
+        padding-left: 25px !important;
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (max-width: 356px){
+
+    .table{
+        width: 200%;
+    }
+}
+
+@media screen and (max-width: 340px){
+
+    .table{
+        width: 220%;
+    }
+}
+
+@media screen and (max-width: 312px){
+
+    .table{
+        width: 230%;
+    }
+}
+
+/* Responsive Page Ends Here*/
