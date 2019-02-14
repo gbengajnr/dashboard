@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Dashboard | Jaiz Internet Banking</title>
+    <title>Internet | Jaiz Internet Banking</title>
     <link rel="icon" href="favicon.ico">
     
     <!-- Bootstrap CSS CDN -->
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/transfer.css"/>
+    <link rel="stylesheet" href="css/internet.css"/>
     <!-- Font CSS -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
     
@@ -89,33 +89,33 @@
                 <a class="collapsed buy-airtime" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     <img src="images/coupon-icon.png"><span>Buy Airtime</span>
                 </a>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
-                        <a href="">Buy Airtime Self</a>
-                        <a href="">Buy Airtime Others</a>
+                        <a href="buy-airtime-self.html" >Buy Airtime Self</a>
+                        <a href="buy-airtime-others.html">Buy Airtime Others</a>
                     </div>
                 </div>
                 
                 <a class="collapsed buy-data" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <img src="images/Vector.png"><span>Buy Data</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
-                        <a href="">Buy Data Self</a>
-                        <a href="">Buy Data Others</a>
+                        <a href="buy-data-self.html">Buy Data Self</a>
+                        <a href="buy-data-others" >Buy Data Others</a>
                     </div>
                 </div>
 
                 <a class="collapsed transfer" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <img src="images/transfer-icon.png"><span>Transfer</span>
                 </a>
-                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
-                        <a href="" class="act">Own Account Transfer</a>
+                        <a href="own-acc-transfer.html" >Own Account Transfer</a>
                         <a href="">To Jaiz Account</a>
                         <a href="">To other Banks</a>
                         <a href="">To Beneficiary</a>
-       
+           
                     </div>
 
                 </div>
@@ -124,9 +124,9 @@
 
                 <p class="utilities">Utilities</p>
 
-                <a href=""><img src="images/internet-icon.png" class="internet-icon"><span>Internet</span></a>
+                <a href="internet.html" class="act"><img src="images/internet-icon.png" class="internet-icon"><span>Internet</span></a>
 
-                <a href=""><img src="images/electricity-icon.png" class="electricity-icon"><span>Electricity</span></a>
+                <a href="electricity.html"><img src="images/electricity-icon.png" class="electricity-icon"><span>Electricity</span></a>
 
                 <a href=""><img src="images/television-icon.png" class="television-icon"><span>Cable TV</span></a>
 
@@ -158,9 +158,9 @@
                 
                 <div class="main-page-content">
 
-                    <h4>Transfer</h4>
+                    <h4>Internet</h4><a href="internet2.html" class="go-to-link">To 2nd page</a>
                     <div class="own-account-content">
-                        <p class="title">Own Account Transfer</p>
+                        <p class="title">Details</p>
                         <hr>
                         <div class="form-box">
                             <form>
@@ -175,22 +175,35 @@
                                     </select>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Receiving Account</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                    <option class="light-option">Select from any of your accounts</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    </select>
-                                </div>
+                               
+                               
+                                <div class="container">
 
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Amount (₦)</label>
-                                    <input type="number" class="form-control" id="exampleInputAmount" placeholder="Enter Amount">
-                                </div>
+                                        <div class="form-group">
+                                                <label for="exampleInputEmail1">Internet Billing </label>
+                                                
+                                                <select class="form-control network" id="exampleFormControlSelect1">
+                                                        <option class="light-option"></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                    </select>
+                                            </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1" class="amount-text">Amount (N)</label>
+                                            <input type="number" class="form-control" id="exampleInputAmount" placeholder="Enter Amount">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Customer I.D</label>
+                                        <div class="input-group mb-3">
+                                            <input type="number" class="form-control light-option" placeholder="Enter a Jaiz Account Number" aria-label="phone number" aria-describedby="basic-addon2">
+                                            
+                                        </div>
+                                    </div>
+
 
                                 <button type="submit" class="btn-submit">PROCEED</button>
                             </form>
@@ -204,7 +217,7 @@
                                 <tr>
                                     <th scope="col">Date</th>
                                     <th scope="col">Sending Account</th>
-                                    <th scope="col">Receiver</th>
+                                    <th scope="col">Customer I.D</th>
                                     <th scope="col">Amount</th>
                                     <th scope="col" class="hidden-col">Hidden</th>
                                 </tr>
@@ -213,23 +226,23 @@
                                 <tr>
                                     <td>22-10-2018</td>
                                     <td>Jaiz Savings Account</td>
-                                    <td>Jaiz Savings Account</td>
+                                    <td>0099878767650</td>
                                     <td>N10,000</td>
                                     <td><a href="">Redo</a></td>
                                 </tr>
                                 <tr class="stripped">
-                                    <td>22-10-2018</td>
+                                    <td>9-10-2018</td>
                                     <td>Jaiz Savings Account</td>
-                                    <td>Jaiz Savings Account</td>
+                                    <td>0099878767650</td>
                                     <td>N10,000</td>
                                     <td><a href="">Redo</a></td>
                                 </tr>
                                 <tr>
-                                    <td>22-10-2018</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>N10,000</td>
-                                    <td><a href="">Redo</a></td>
+                                        <td>7-10-2018</td>
+                                        <td>Jaiz Savings Account</td>
+                                        <td>878937899379</td>
+                                        <td>N20,000</td>
+                                        <td><a href="">Redo</a></td>
                                 </tr>
                             </tbody>
                         </table>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Dashboard | Jaiz Internet Banking</title>
+    <title>Buy Airtime Self | Jaiz Internet Banking</title>
     <link rel="icon" href="favicon.ico">
     
     <!-- Bootstrap CSS CDN -->
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/transfer.css"/>
+    <link rel="stylesheet" href="css/buy-airtime-self3.css"/>
     <!-- Font CSS -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
     
@@ -54,44 +54,43 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <p class="account-num">0123456789</p>
-                        <p class="account-bal">₦120,000</p>
-                        <p class="acc-bal-text">Account Balance</p>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p class="account-num">0123456789</p>
+                            <p class="account-bal">₦120,000</p>
+                            <p class="acc-bal-text">Account Balance</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="account-num">2003456789</p>
+                            <p class="account-bal">₦80,000</p>
+                            <p class="acc-bal-text">Account Balance</p>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <p class="account-num">2003456789</p>
-                        <p class="account-bal">₦80,000</p>
-                        <p class="acc-bal-text">Account Balance</p>
-                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <i class="fas fa-chevron-left"></i> <span aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <i class="fas fa-chevron-right"></i> <span aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <i class="fas fa-chevron-left"></i> <span aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <i class="fas fa-chevron-right"></i> <span aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
 
-            <hr>
-
-            <div class="accordion" id="accordionExample">  
+            <div class="accordion" id="accordionExample">
+               
                 
-                <a href="Dashboard.html"><img src="images/home-icon.png" class="home-icon"><span>Home</span></a>
+                <a class="active" href="Dashboard.html"><img src="images/home-icon.png" class="home-icon"><span>Home</span></a>
 
                 <a class="collapsed buy-airtime" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     <img src="images/coupon-icon.png"><span>Buy Airtime</span>
                 </a>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
-                        <a href="">Buy Airtime Self</a>
+                        <a href="buy-airtime-self.html">Buy Airtime Self</a>
                         <a href="">Buy Airtime Others</a>
                     </div>
                 </div>
@@ -109,13 +108,13 @@
                 <a class="collapsed transfer" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <img src="images/transfer-icon.png"><span>Transfer</span>
                 </a>
-                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
-                        <a href="" class="act">Own Account Transfer</a>
+                        <a href="">Own Account Transfer</a>
                         <a href="">To Jaiz Account</a>
                         <a href="">To other Banks</a>
                         <a href="">To Beneficiary</a>
-       
+                
                     </div>
 
                 </div>
@@ -144,6 +143,7 @@
 
             </div>
             
+            
         </div>  
         <!-- Sidebar Navigation Ends Here -->
 
@@ -157,85 +157,55 @@
                 <div id="overlay"></div>
                 
                 <div class="main-page-content">
-
-                    <h4>Transfer</h4>
-                    <div class="own-account-content">
-                        <p class="title">Own Account Transfer</p>
-                        <hr>
-                        <div class="form-box">
-                            <form>
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Sending Account</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                    <option class="light-option">Choose account</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Receiving Account</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                    <option class="light-option">Select from any of your accounts</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Amount (₦)</label>
-                                    <input type="number" class="form-control" id="exampleInputAmount" placeholder="Enter Amount">
-                                </div>
-
-                                <button type="submit" class="btn-submit">PROCEED</button>
-                            </form>
-                        </div>
-                    </div>
-
-                    <hp class="recent-trans-text">Recent Transaction History</p>
-                    <div class="table-responsive">
-                        <table class="table table-borderless">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Sending Account</th>
-                                    <th scope="col">Receiver</th>
-                                    <th scope="col">Amount</th>
-                                    <th scope="col" class="hidden-col">Hidden</th>
+                    <h4>Buy Airtime</h4>
+                    <table class="table table-striped ">
+                        <tr class="odd-num-row">
+                            <td class="header-text">Sending Account</td>
+                            <td class="header-text">Phone Number</td>
+                            <td class="header-text">Amount</td>
+                            <td class="header-text">N10,000</td>
+                        </tr>
+                        <tbody>
+                            <tr>
+                               <tr class="odd-num-row">
+                                    <td class="">Jaiz Savings acccount</td>
+                                    <td class="">0908787659</td>
+                                    <td class="">MTN</td>
+                                    <td class="">N10,000</td>
+                                   
                                 </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>22-10-2018</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>N10,000</td>
-                                    <td><a href="">Redo</a></td>
-                                </tr>
-                                <tr class="stripped">
-                                    <td>22-10-2018</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>N10,000</td>
-                                    <td><a href="">Redo</a></td>
-                                </tr>
-                                <tr>
-                                    <td>22-10-2018</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>N10,000</td>
-                                    <td><a href="">Redo</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div> 
 
-                </div>
+                                <tr class="even-num-row">
+                                    <td class="">Jaiz Current Account</td>
+                                    <td  class="">08088767656</td>
+                                    <td class="">GLO NG</td>
+                                    <td class="">N100,000</td>
+                                    
+                                </tr>
+
+                                <tr class="odd-num-row">
+                                    <td class="">Choose Account</td>
+                                    <td  class="">Phone Number</td>
+                                    <td>Select Network</td>
+                                    <td class="">Enter Amount</td>
+                                    
+                                </tr>
+
+                            </tr>      
+                        </tbody>
+
+                      
+                    </table>
+                    <input type="submit" name="btn-submit" class="btn-submit" value="PROCEED">
+                    
+
+                    
+
+         
+
+                </div>       
+                    
+                
 
             </div>
                 

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/transfer.css"/>
+    <link rel="stylesheet" href="css/buy-airtime-self.css"/>
     <!-- Font CSS -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
     
@@ -89,10 +89,10 @@
                 <a class="collapsed buy-airtime" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     <img src="images/coupon-icon.png"><span>Buy Airtime</span>
                 </a>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
-                        <a href="">Buy Airtime Self</a>
-                        <a href="">Buy Airtime Others</a>
+                        <a href="buy-airtime-self.html" class="act">Buy Airtime Self</a>
+                        <a href="buy-airtime-others.html">Buy Airtime Others</a>
                     </div>
                 </div>
                 
@@ -101,21 +101,21 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
-                        <a href="">Buy Data Self</a>
-                        <a href="">Buy Data Others</a>
+                        <a href="buy-data-self.html">Buy Data Self</a>
+                        <a href="buy-data-others.html">Buy Data Others</a>
                     </div>
                 </div>
 
                 <a class="collapsed transfer" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <img src="images/transfer-icon.png"><span>Transfer</span>
                 </a>
-                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
-                        <a href="" class="act">Own Account Transfer</a>
+                        <a href="own-acc-transfer.html" >Own Account Transfer</a>
                         <a href="">To Jaiz Account</a>
                         <a href="">To other Banks</a>
                         <a href="">To Beneficiary</a>
-       
+                    
                     </div>
 
                 </div>
@@ -158,9 +158,9 @@
                 
                 <div class="main-page-content">
 
-                    <h4>Transfer</h4>
+                    <h4>Buy Airtime</h4><a href="buy-airtime-self2.html" class="go-to-link">To 2nd page</a>
                     <div class="own-account-content">
-                        <p class="title">Own Account Transfer</p>
+                        <p class="title">Buy airtime self</p>
                         <hr>
                         <div class="form-box">
                             <form>
@@ -175,22 +175,27 @@
                                     </select>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Receiving Account</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                    <option class="light-option">Select from any of your accounts</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    </select>
-                                </div>
+                                
+                               
+                                    <div class="container">
 
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Amount (₦)</label>
-                                    <input type="number" class="form-control" id="exampleInputAmount" placeholder="Enter Amount">
-                                </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Amount (₦)</label>
+                                            <input type="number" class="form-control" id="exampleInputAmount" placeholder="Enter Amount">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Network</label>
+                                            
+                                            <select class="form-control network" id="exampleFormControlSelect1">
+                                                    <option class="light-option">Choose account</option>
+                                                    <option>9mobile</option>
+                                                    <option>Airtel</option>
+                                                    <option>GLO</option>
+                                                    <option>MTN</option>
+                                                </select>
+                                        </div>
+                                    </div>
 
                                 <button type="submit" class="btn-submit">PROCEED</button>
                             </form>
@@ -204,8 +209,8 @@
                                 <tr>
                                     <th scope="col">Date</th>
                                     <th scope="col">Sending Account</th>
-                                    <th scope="col">Receiver</th>
                                     <th scope="col">Amount</th>
+                                    <th scope="col">Network</th>
                                     <th scope="col" class="hidden-col">Hidden</th>
                                 </tr>
                             </thead>
@@ -213,22 +218,22 @@
                                 <tr>
                                     <td>22-10-2018</td>
                                     <td>Jaiz Savings Account</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>N10,000</td>
+                                    <td>N1,000</td>
+                                    <td>MTN NG</td>
                                     <td><a href="">Redo</a></td>
                                 </tr>
                                 <tr class="stripped">
                                     <td>22-10-2018</td>
                                     <td>Jaiz Savings Account</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>N10,000</td>
+                                    <td>N100</td>
+                                    <td>MTN NG</td>
                                     <td><a href="">Redo</a></td>
                                 </tr>
                                 <tr>
                                     <td>22-10-2018</td>
                                     <td>Jaiz Savings Account</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>N10,000</td>
+                                    <td>N400</td>
+                                    <td>MTN NG</td>
                                     <td><a href="">Redo</a></td>
                                 </tr>
                             </tbody>
