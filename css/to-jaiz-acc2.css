@@ -400,7 +400,7 @@ input:focus, textarea:focus{
 .form-box .row{
     margin: 0 auto;
     width: 90%;
-    padding-left: 62px;
+    margin-left: 13%;
 }
 
 .form-box .send-receive-text{
@@ -549,7 +549,7 @@ form .btn-submit{
 @media screen and (max-width: 2500px){
 
     .form-box .row{
-        margin-left: 16%;
+        margin-left: 21%;
     }
 
     .form-box .veri-field{
@@ -585,7 +585,7 @@ form .btn-submit{
 @media screen and (max-width: 1850px){
 
     .form-box .row{
-        margin-left: 11%;
+        margin-left: 19%;
     }
 
     .form-box .veri-field{
@@ -604,10 +604,6 @@ form .btn-submit{
 
 @media screen and (max-width: 1550px){
 
-    .form-box .row{
-        margin-left: 9%;
-    }
-
     .form-box .veri-field{
         margin-left: 30%;
     }
@@ -617,7 +613,7 @@ form .btn-submit{
 @media screen and (max-width: 1405px){
 
     .form-box .row{
-        margin-left: 6%;
+        margin-left: 15%;
     }
 
     .form-box .veri-field{
@@ -629,7 +625,7 @@ form .btn-submit{
 @media screen and (max-width: 1300px){
 
     .form-box .row{
-        margin-left: 3%;
+        margin-left: 15%;
     }
 
     .form-box .veri-field{
@@ -641,7 +637,7 @@ form .btn-submit{
 @media screen and (max-width: 1188px){
 
     .form-box .row{
-        margin-left: 0%;
+        margin-left: 13%;
     }
 
     .form-box .veri-field{
@@ -657,7 +653,7 @@ form .btn-submit{
     }
 
     .form-box .row{
-        margin-left: 3%;
+        margin-left: 13%;
     }
 
     .form-box .veri-field{
@@ -669,7 +665,7 @@ form .btn-submit{
 @media screen and (max-width: 1008px){
 
     .form-box .row{
-        margin-left: 0%;
+        margin-left: 13%;
     }
 
     .form-box .veri-field{
@@ -681,7 +677,7 @@ form .btn-submit{
 @media screen and (max-width: 920px){
 
     .form-box .row{
-        margin-left: 0%;
+        margin-left: 8%;
     }
 
     .form-box .veri-field{
@@ -697,7 +693,7 @@ form .btn-submit{
 @media screen and (max-width: 848px){
 
     .form-box .row{
-        margin-left: 0%;
+        margin-left: 7%;
     }
 
     .form-box .veri-field{
@@ -709,7 +705,7 @@ form .btn-submit{
 @media screen and (max-width: 780px){
 
     .form-box .row{
-        margin-left: 0%;
+        margin-left: 5%;
     }
 
     .form-box .veri-field{
@@ -790,7 +786,7 @@ form .btn-submit{
     }
 
     .form-box .row{
-        margin-left: -2%;
+        margin-left: 10%;
     }
 
     .form-box .veri-field{
@@ -802,7 +798,7 @@ form .btn-submit{
 @media screen and (max-width: 680px){
 
     .form-box .row{
-        margin-left: -5%;
+        margin-left: 5%;
     }
 
     .form-box .veri-field{
@@ -818,7 +814,7 @@ form .btn-submit{
     }
 
     .form-box .row{
-        margin-left: -10%;
+        margin-left: 5%;
     }
 
     .form-box .veri-field{
@@ -896,10 +892,6 @@ form .btn-submit{
 
 @media screen and (max-width: 390px){
 
-    .form-box .row{
-        margin-left: -20%;
-    }
-
     .form-box .veri-field{
         margin-left: 5%;
     }
@@ -907,10 +899,6 @@ form .btn-submit{
 }
 
 @media screen and (max-width: 368px){
-
-    .form-box .row{
-        margin-left: -25%;
-    }
 
     .form-box .veri-field{
         margin-left: 9%;
@@ -954,7 +942,7 @@ form .btn-submit{
     }
 
     .form-box .row{
-        margin-left: -25%;
+        margin-left: 1%;
     }
 
     .form-box .veri-field{

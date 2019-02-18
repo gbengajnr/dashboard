@@ -1,17 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face{
+    font-family: 'CircularStd-Book';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/CircularStd-Book.woff") format("opentype");
+}
 
  *{
     box-sizing: border-box;
-
  }
 
 body{
+    font-family: "CircularStd-Book", Arial, sans-serif;
     background: url('../images/background.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: 'Roboto';
 }
 
 .scam-alert{
@@ -19,13 +23,11 @@ body{
     padding: 1px ;
     margin: 0 auto;
     background: red;
-    font-family: 'roboto';
     line-height: normal;
     font-size: 11px;
     letter-spacing: 0.01em;
     color: #FFFFFF;
-    text-align: center;
-    
+    text-align: center;  
 }
 .scam-text{
     margin: 0;
@@ -52,7 +54,6 @@ body{
 }
  
 .nav-link {
-    font-family: 'Roboto';
     line-height: normal;
     font-size: 12px;
     letter-spacing: 0.02em;
@@ -98,7 +99,6 @@ body{
 }
 
 .formBox h1 {
-    font-family: 'roboto';
     line-height: normal;
     font-size: 20px;
     letter-spacing: 0.02em;
@@ -119,7 +119,6 @@ body{
     width: 100%;
     cursor: pointer;
     text-transform: uppercase;
-    font-family: 'roboto';
     line-height: normal;
     font-size: 13px;
     color: #FFFFFF;
@@ -136,7 +135,6 @@ body{
     margin: 0;
     display: block;
     margin-top: 10px;
-    font-family: 'roboto';
     line-height: normal;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -176,7 +174,6 @@ body{
 
 .footer-text{
     color: #FFFFFF;
-    font-family:'roboto';
     line-height: normal;
     font-size: 12px;
     letter-spacing: 0.02em;
