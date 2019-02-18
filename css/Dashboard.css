@@ -148,6 +148,7 @@ input:focus, textarea:focus{
 
 .sidenav a.active{
    font-weight: bold;
+   color: #2A9E4A !important;
 }
 .sidenav a.active:hover{
     padding: 10px 30px 10px 10px;
@@ -310,18 +311,18 @@ input:focus, textarea:focus{
 
 .good-morning-text, .time-text{
     color: #08501C;
-    font-family: "CircularStd-Book", Arial, sans-serif;
+    font-family: "CircularStd-Book";
     line-height: normal;
     font-size: 1.6em;
-    letter-spacing: 0.001em;
     font-weight: 500;
+    letter-spacing: 0.001em;
 }
 
 .bvn-text, .date-text {
     color: #545454;
     font-size: 1em;
-    font-family: "CircularStd-Book", Arial, sans-serif;
-   
+    font-family: "CircularStd-Book";
+    font-weight: 500;
     margin-top: -8px;
 }
 .header-1{
@@ -378,7 +379,7 @@ input:focus, textarea:focus{
 .first-box  .amount-text{
     margin-top: 18px !important;
     margin-left: 38px !important;
-    font-size: 3em !important;
+    font-size: 2.7em !important;
     font-family: "Circular Std" ;
     line-height: normal !important;
     letter-spacing: 0.06em !important;

@@ -136,7 +136,7 @@
                 
                 <hr>
 
-                <a href="" class="cards-text"><img src="images/credit-card-icon.png" class="credit-card-icon"><span>Cards and Cheques</span></a>
+                
 
                 <a href="" class="manage-bene-text"><img src="images/avatar-icon.png" class="avatar-icon"><span>Manage Beneficiaries</span></a>
             
@@ -158,37 +158,68 @@
                 
                 <div class="main-page-content">
 
-                    <h4>Transfer</h4><a href="to-jaiz-acc2.html" class="go-to-link">Go to 2nd page</a>
+                    <h4>Transfer</h4><a href="to-jaiz-acc-multi-trans2.html" class="go-to-link">Go to 2nd page</a>
                     <div class="table-responsive">
                         <table class="table table-borderless">
                             <thead>
                                 <tr>
                                     <th scope="col">Sending Account</th>
-                                    <th scope="col">Receing Account</th>
+                                    <th scope="col">Receiving Account Number</th>
                                     <th scope="col">Amount</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>Ndubuisi Kanu</td>
-                                    <td>N10,000</td>
+                                    <td>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Jaiz Savings Account</option>
+                                            <option>Jaiz Current Account</option>
+                                            <option>Jaiz Fixed Account</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="exampleInputAccount" placeholder="Enter Jaiz Account">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="exampleInputAmount" placeholder="Enter Amount">
+                                    </td>
                                 </tr>
                                 <tr class="stripped">
-                                    <td>Jaiz Savings Account</td>
-                                    <td>Ndubuisi Kanu</td>
-                                    <td>N10,000</td>
+                                    <td>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Jaiz Savings Account</option>
+                                            <option>Jaiz Current Account</option>
+                                            <option>Jaiz Fixed Account</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="exampleInputAccount" placeholder="Enter Jaiz Account">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="exampleInputAmount" placeholder="Enter Amount">
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>Ndubuisi Kanu</td>
-                                    <td>N10,000</td>
+                                    <td>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Jaiz Savings Account</option>
+                                            <option>Jaiz Current Account</option>
+                                            <option>Jaiz Fixed Account</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="exampleInputAccount" placeholder="Enter Jaiz Account">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="exampleInputAmount" placeholder="Enter Amount">
+                                    </td>
                                 </tr>
                             </tbody>
-                            <tfoot>
-                                <button>ADD A TRANSACTION</button>
-                            </tfoot>
                         </table>
+                        <div class="table-button">
+                            <button type="button" class="add-a-trans"><i class="fas fa-plus"></i>ADD A TRANSACTION</button>
+                            <button type="button" class="proceed-btn">PROCEED</button>
+                        </div>
                     </div> 
 
                 </div>

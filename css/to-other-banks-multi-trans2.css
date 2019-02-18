@@ -12,7 +12,7 @@
 body {
     font-family: "CircularStd-Book", Arial, sans-serif;
     font-size: .875rem;
-    background: #F2FAF4;
+    background: #F7F8FA;
 }
 
 
@@ -365,113 +365,171 @@ input:focus, textarea:focus{
     right: 10px;
 }
 
-.table-responsive{
+.own-account-content{
     background: #FFFFFF;
     box-shadow: 1px 2px 10px rgba(79, 79, 79, 0.02);
     border-radius: 7px;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 15px;
+    margin-bottom: 40px;
 }
 
-.table{
-    margin-bottom: 0px;
-}
-
-.table thead tr th{
-    border-bottom: 0.75px solid #D6E9DB !important;
-    padding: 6px !important;
-    padding-left: 25px !important;
-    font-size: 1em;
-    font-weight: 500;
+.own-account-content .title{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    margin: 0;
     color: #08501C;
 }
 
-.table thead tr th.hidden-col{
-    color: #fff;
+.own-account-content hr{
+    margin-top: 0px;
 }
 
-.table tbody tr.stripped{
-    background: #FAFAFA;
+.form-box{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 40px;
 }
 
-.table tbody tr td{
-    padding-left: 25px !important;
-    font-size: 1em;
-    font-weight: 500;
+.form-box h6{
+    color: #2A9E4A !important;
+    text-align: center;
+}
+
+.form-box .row{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form-box .send-receive-text{
+    color: #333333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.form-box .jaiz-account-text{
     color: #545454;
 }
 
-.table tbody tr td select{
-    font-size: 1em;
-    width: 170px;
-    border: none;
-    background: transparent;
-    padding: 0px !important;
-    margin: 0px !important;
-    margin-right: 30px !important;
-    margin-top: -5px !important;
-    margin-bottom: -5px !important;
+.form-box .enter-your-digits{
+    text-align: center;
+    font-weight: 600;
+    color: #333333;
 }
 
-.table tbody tr td input{
-    font-size: 1em;
-    width: 200px;
+.form-box .veri-field{
+    cursor: default;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 9.2em;
+}
+
+.form-box input.verify {
+    display: inline-block;
+    width: 50px;
+    height: 46px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #414042;
+    border: 0;
+    background: #F2FDF5;
+    border-radius: 3px;
+    cursor: text;
+    margin: 0;
+    margin-right: 15px;
+    padding: 0;
+}
+
+.form-box input.verify:focus{
+    border-bottom: 1.5px solid #2A9E4A;
+}
+
+.form-box form .buttons{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 50px;
+    display: flex;
+}
+
+form .btn-back{
+    background: none;
+    border-radius: 3px;
+    border: 1.5px solid #2A9E4A;
+    width: 30%;
+    padding: 13px;
+    color: #2A9E4A;
+    font-weight: 500;
+    margin-bottom: 60px;
+    margin-right: 10%;
+    cursor: pointer;
+}
+
+form .btn-submit{
+    background: #2A9E4A;
+    border-radius: 3px;
     border: none;
-    background: transparent;
-    margin-left: -12px !important;
-    margin-top: -5px !important;
-    margin-bottom: -5px !important;
+    width: 60%;
+    padding: 13px;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.modal .modal-header .modal-title{
+    margin: 0;
+    text-align: center;
+    width: 100%;
     color: #42624B;
 }
 
-.table tbody tr td #exampleInputAccount{
-    margin-right: 30px !important;
+.modal .modal-body{
+    margin: 0;
+    text-align: center;
+    padding: 50px 0px;
+    font-weight: 600;
 }
 
-.table tbody tr td a{
-    color: #2A9E4A;
-    font-size: 0.85em;
-    border: 1px solid #2A9E4A;
-    border-radius: 3px;
-    padding: 5px 15px;
+.modal#exampleModalCenter2 .modal-body p{
+    margin-bottom: 50px;
+    font-weight: 400;
 }
 
-.table tbody tr td a:hover{
-    text-decoration: none;
-    color: #545454;
-    border: 1px solid #545454;
+.modal .modal-body img{
+    width: 50px;
+    margin-top: -5px;
+    margin-bottom: 30px;
 }
 
-.table-button{
+.modal .modal-footer{
+    margin: 0 auto;
+    width: 70%;
+    border: none;
     margin-left: 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
-.table-button .add-a-trans{
-    background: rgba(210, 165, 14, 0.1);
-    border: 1px solid #D2A50E;
-    border-radius: 2px;
-    color: #D2A50E;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-.table-button .add-a-trans i{
-    margin-right: 8px;
-}
-
-.table-button .proceed-btn{
-    margin-left: 20px;
-    background: #2A9E4A;
-    border: 1px solid #2A9E4A;
+.modal .modal-footer .cancel-btn{
+    background: none;
+    border: 1.5px solid #2A9E4A;
+    color: #2A9E4A;
     border-radius: 3px;
-    color: #fff;
-    padding: 10px 15px;
+    padding: 12px;
     cursor: pointer;
+    width: 30%;
+    margin-right: 10%;
 }
 
-
+.modal .modal-footer .exit-btn{
+    background: #2A9E4A;
+    border: 1.5px solid #2A9E4A;
+    color: #FFFFFF;
+    border-radius: 3px;
+    padding: 12px;
+    cursor: pointer;
+    width: 30%;
+}
 
 /*Main Page Ends Here*/
 
@@ -479,38 +537,179 @@ input:focus, textarea:focus{
 
 /*Responsive Page Starts Here*/
 
-@media screen and (max-width: 1040px){
+@media screen and (max-width: 2500px){
+
+    .form-box .row{
+        margin-left: 5%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 41.5%;
+    }
+
+}
+
+@media screen and (max-width: 2384px){
+
+    .form-box .veri-field{
+        margin-left: 41%;
+    }
+
+}
+
+@media screen and (max-width: 2200px){
+
+    .form-box .veri-field{
+        margin-left: 40%;
+    }
+
+}
+
+@media screen and (max-width: 2044px){
+
+    .form-box .veri-field{
+        margin-left: 38.5%;
+    }
+
+}
+
+@media screen and (max-width: 1850px){
+
+    .form-box .row{
+        margin-left: 3%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 37%;
+    }
+
+}
+
+@media screen and (max-width: 1688px){
+
+    .form-box .veri-field{
+        margin-left: 37%;
+    }
+
+}
+
+@media screen and (max-width: 1550px){
+
+    .form-box .veri-field{
+        margin-left: 36%;
+    }
+
+}
+
+@media screen and (max-width: 1441px){
+
+    .form-box .veri-field{
+        margin-left: 34.5%;
+    }
+
+}
+
+@media screen and (max-width: 1405px){
+
+    .form-box .row{
+        margin-left: 0%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 34%;
+    }
+
+}
+
+@media screen and (max-width: 1300px){
+
+    .form-box .row{
+        margin-left: 0%;
+    }
+
+    .form-box .veri-field{
+        width: 80%;
+        margin-left: 32%;
+    }
+
+}
+
+@media screen and (max-width: 1188px){
+
+    .form-box .row{
+        margin-left: 0%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 30%;
+    }
+
+}
+
+@media screen and (max-width: 1112px){
 
     .form-box{
-        width: 70%;
+        width: 80%;
     }
 
-    .table{
-        width: 110%;
+    .form-box .row{
+        margin-left: 0%;
     }
 
-}
-
-@media screen and (max-width: 969px){
-
-    .table{
-        width: 130%;
+    .form-box .veri-field{
+        margin-left: 28%;
     }
 
 }
 
-@media screen and (max-width: 858px){
+@media screen and (max-width: 1008px){
 
-    .table{
-        width: 150%;
+    .form-box .row{
+        margin-left: 0%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 25%;
     }
 
 }
 
-@media screen and (max-width: 777px){
+@media screen and (max-width: 920px){
 
-    .table{
-        width: 160%;
+    .form-box .row{
+        margin-left: 0%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 21%;
+    }
+
+    .modal{
+        margin-left: 0px;
+    }
+
+}
+
+@media screen and (max-width: 848px){
+
+    .form-box .row{
+        margin-left: 0%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 17%;
+    }
+
+}
+
+@media screen and (max-width: 780px){
+
+    .form-box .row{
+        margin-left: 0%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 14%;
     }
 
 }
@@ -586,88 +785,178 @@ input:focus, textarea:focus{
         width: 100%;
     }
 
-    .table{
-        width: 110%;
+    .form-box .row{
+        margin-left: 0%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 24%;
     }
 
 }
 
-@media screen and (max-width: 749px){
+@media screen and (max-width: 680px){
 
-    .table{
-        width: 130%;
+    .form-box .row{
+        margin-left: 0%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 20%;
     }
 
 }
 
-@media screen and (max-width: 638px){
-
-    .table{
-        width: 150%;
-    }
-
-}
-
-@media screen and (max-width: 557px){
+@media screen and (max-width: 608px){
 
     .form-box{
-        width: 85%;
+        width: 90%;
     }
 
-    .table{
-        width: 170%;
+    .form-box .row{
+        margin-left: 0%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 24%;
     }
 
 }
 
-@media screen and (max-width: 495px){
+@media screen and (max-width: 575px){
+
+    .modal{
+        width: 90%;
+        margin-left: 25px;
+    }
+
+}
+
+@media screen and (max-width: 560px){
 
     .main-page-content{
+        width: 90% !important;
+    }
+
+    .form-box{
+        width: 90% !important;
+    }
+
+    .form-box .veri-field{
+        margin-left: 20%;
+    }
+
+    .modal .modal-footer{
+        width: 95%;
+        margin-left: -10px;
+    }
+    
+    .modal .modal-footer .cancel-btn{
+        width: 40%;
+    }
+    
+    .modal .modal-footer .exit-btn{
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 492px){
+
+    .form-box .veri-field{
+        margin-left: 15%;
+    }
+
+}
+
+@media screen and (max-width: 436px){
+
+    .form-box .veri-field{
+        margin-left: 10%;
+    }
+
+}
+
+@media screen and (max-width: 404px){
+
+    .modal{
+        margin-left: 15px !important;
+    }
+
+    .modal-body{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+}
+
+@media screen and (max-width: 390px){
+
+    .form-box .veri-field{
+        margin-left: 5%;
+    }
+
+}
+
+@media screen and (max-width: 368px){
+
+    .form-box .veri-field{
+        margin-left: 9%;
+    }
+
+    .form-box input.verify {
+        width: 45px;
+        height: 45px;
+        font-size: 1em;
+        margin-right: 10px;
+    }
+
+    .form-box form .buttons{
+        width: 90%;
+        display: block;
+    }
+
+    form .btn-back{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    form .btn-submit{
         width: 100%;
     }
 
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 344px){
 
-    .table{
-        width: 190%;
+    .form-box .veri-field{
+        margin-left: 5%;
     }
 
 }
 
-@media screen and (max-width: 383px){
+@media screen and (max-width: 320px){
 
-    .table{
-        width: 190%;
+    .main-page-content{
+        width: 98% !important;
     }
 
-    .table tbody tr td{
-        padding-left: 25px !important;
-        font-size: 0.8em;
+    .form-box .row{
+        margin-left: 1%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 5%;
     }
 
 }
 
-@media screen and (max-width: 356px){
+@media screen and (max-width: 305px){
 
-    .table{
-        width: 200%;
+    .form-box .veri-field{
+        margin-left: 3%;
     }
-}
 
-@media screen and (max-width: 340px){
-
-    .table{
-        width: 220%;
-    }
-}
-
-@media screen and (max-width: 312px){
-
-    .table{
-        width: 230%;
-    }
 }
 
 /* Responsive Page Ends Here*/

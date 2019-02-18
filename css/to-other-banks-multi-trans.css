@@ -408,9 +408,13 @@ input:focus, textarea:focus{
     background: transparent;
     padding: 0px !important;
     margin: 0px !important;
-    margin-right: 30px !important;
     margin-top: -5px !important;
     margin-bottom: -5px !important;
+}
+
+.table tbody tr td select.bank-dropdown{
+    width: 150px;
+    margin-left: -3px !important;
 }
 
 .table tbody tr td input{
@@ -426,6 +430,10 @@ input:focus, textarea:focus{
 
 .table tbody tr td #exampleInputAccount{
     margin-right: 30px !important;
+}
+
+.table tbody tr td .input-amount{
+    width: 150px;
 }
 
 .table tbody tr td a{

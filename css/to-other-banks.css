@@ -365,11 +365,97 @@ input:focus, textarea:focus{
     right: 10px;
 }
 
+.own-account-content{
+    background: #FFFFFF;
+    box-shadow: 1px 2px 10px rgba(79, 79, 79, 0.02);
+    border-radius: 7px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.own-account-content .title{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    margin: 0;
+    color: #08501C;
+}
+
+.own-account-content hr{
+    margin-top: 0px;
+}
+
+.form-box{
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 40px;
+}
+
+.form-group label{
+    color: #333333 !important;
+    font-weight: 500;
+}
+
+.form-group select, .form-group input{
+    background: #F2FDF5;
+    border: none;
+    font-size: 1em;
+}
+.form-group input{
+    width: 100%;
+}
+
+.form-group option.light-option{
+    color: rgba(130, 130, 130, 0.8);
+}
+
+.form-group option{
+    color: #545454;
+}
+
+.third-sec{
+    display: flex;
+}
+
+form .btn-submit{
+    margin-top: 30px;
+    background: #2A9E4A;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.add-a-transaction{
+    background: rgba(210, 165, 14, 0.1);
+    border: 1.5px solid #D2A50E;
+    border-style: dashed;
+    border-radius: 3px;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 60px;
+    color: #D2A50E;
+    cursor: pointer;
+}
+
+.add-a-transaction:hover{
+    text-decoration: none;
+    color: #D2A50E;
+}
+
+.recent-trans-text{
+    font-size: 1.2em;
+}
+
 .table-responsive{
     background: #FFFFFF;
     box-shadow: 1px 2px 10px rgba(79, 79, 79, 0.02);
     border-radius: 7px;
-    margin-top: 10px;
+    margin-top: -5px;
     margin-bottom: 50px;
 }
 
@@ -381,7 +467,7 @@ input:focus, textarea:focus{
     border-bottom: 0.75px solid #D6E9DB !important;
     padding: 6px !important;
     padding-left: 25px !important;
-    font-size: 1em;
+    font-size: 0.85em;
     font-weight: 500;
     color: #08501C;
 }
@@ -396,36 +482,9 @@ input:focus, textarea:focus{
 
 .table tbody tr td{
     padding-left: 25px !important;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 500;
     color: #545454;
-}
-
-.table tbody tr td select{
-    font-size: 1em;
-    width: 170px;
-    border: none;
-    background: transparent;
-    padding: 0px !important;
-    margin: 0px !important;
-    margin-right: 30px !important;
-    margin-top: -5px !important;
-    margin-bottom: -5px !important;
-}
-
-.table tbody tr td input{
-    font-size: 1em;
-    width: 200px;
-    border: none;
-    background: transparent;
-    margin-left: -12px !important;
-    margin-top: -5px !important;
-    margin-bottom: -5px !important;
-    color: #42624B;
-}
-
-.table tbody tr td #exampleInputAccount{
-    margin-right: 30px !important;
 }
 
 .table tbody tr td a{
@@ -440,35 +499,6 @@ input:focus, textarea:focus{
     text-decoration: none;
     color: #545454;
     border: 1px solid #545454;
-}
-
-.table-button{
-    margin-left: 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-.table-button .add-a-trans{
-    background: rgba(210, 165, 14, 0.1);
-    border: 1px solid #D2A50E;
-    border-radius: 2px;
-    color: #D2A50E;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-.table-button .add-a-trans i{
-    margin-right: 8px;
-}
-
-.table-button .proceed-btn{
-    margin-left: 20px;
-    background: #2A9E4A;
-    border: 1px solid #2A9E4A;
-    border-radius: 3px;
-    color: #fff;
-    padding: 10px 15px;
-    cursor: pointer;
 }
 
 

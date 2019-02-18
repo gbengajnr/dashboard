@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/transfer.css"/>
+    <link rel="stylesheet" href="css/to-other-banks-multi-trans.css"/>
     <!-- Font CSS -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
     
@@ -111,11 +111,11 @@
                 </a>
                 <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
-                        <a href="" class="act">Own Account Transfer</a>
+                        <a href="">Own Account Transfer</a>
                         <a href="">To Jaiz Account</a>
-                        <a href="">To other Banks</a>
+                        <a href="" class="act">To other Banks</a>
                         <a href="">To Beneficiary</a>
-       
+                        <a href="" class="fx">FX Transfer</a>
                     </div>
 
                 </div>
@@ -158,81 +158,90 @@
                 
                 <div class="main-page-content">
 
-                    <h4>Transfer</h4>
-                    <div class="own-account-content">
-                        <p class="title">Own Account Transfer</p>
-                        <hr>
-                        <div class="form-box">
-                            <form>
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Sending Account</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                    <option class="light-option">Choose account</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Receiving Account</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                    <option class="light-option">Select from any of your accounts</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Amount (₦)</label>
-                                    <input type="number" class="form-control" id="exampleInputAmount" placeholder="Enter Amount">
-                                </div>
-
-                                <button type="submit" class="btn-submit">PROCEED</button>
-                            </form>
-                        </div>
-                    </div>
-
-                    <hp class="recent-trans-text">Recent Transaction History</p>
+                    <h4>Transfer</h4><a href="to-jaiz-acc-multi-trans2.html" class="go-to-link">Go to 2nd page</a>
                     <div class="table-responsive">
                         <table class="table table-borderless">
                             <thead>
                                 <tr>
-                                    <th scope="col">Date</th>
                                     <th scope="col">Sending Account</th>
-                                    <th scope="col">Receiver</th>
+                                    <th scope="col">Receiving Account Number</th>
+                                    <th scope="col">Receiving Bank</th>
                                     <th scope="col">Amount</th>
-                                    <th scope="col" class="hidden-col">Hidden</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>22-10-2018</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>N10,000</td>
-                                    <td><a href="">Redo</a></td>
+                                    <td>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Jaiz Savings Account</option>
+                                            <option>Jaiz Current Account</option>
+                                            <option>Jaiz Fixed Account</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="exampleInputAccount" placeholder="Enter Jaiz Account">
+                                    </td>
+                                    <td>
+                                        <select class="form-control bank-dropdown" id="exampleFormControlSelect1">
+                                            <option>First Bank</option>
+                                            <option>EcoBank</option>
+                                            <option>GT Bank</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control input-amount" id="exampleInputAmount" placeholder="Enter Amount">
+                                    </td>
                                 </tr>
                                 <tr class="stripped">
-                                    <td>22-10-2018</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>N10,000</td>
-                                    <td><a href="">Redo</a></td>
+                                    <td>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Jaiz Savings Account</option>
+                                            <option>Jaiz Current Account</option>
+                                            <option>Jaiz Fixed Account</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="exampleInputAccount" placeholder="Enter Jaiz Account">
+                                    </td>
+                                    <td>
+                                        <select class="form-control bank-dropdown" id="exampleFormControlSelect1">
+                                            <option>First Bank</option>
+                                            <option>EcoBank</option>
+                                            <option>GT Bank</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control input-amount" id="exampleInputAmount" placeholder="Enter Amount">
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>22-10-2018</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>Jaiz Savings Account</td>
-                                    <td>N10,000</td>
-                                    <td><a href="">Redo</a></td>
+                                    <td>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Jaiz Savings Account</option>
+                                            <option>Jaiz Current Account</option>
+                                            <option>Jaiz Fixed Account</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="exampleInputAccount" placeholder="Enter Jaiz Account">
+                                    </td>
+                                    <td>
+                                        <select class="form-control bank-dropdown" id="exampleFormControlSelect1">
+                                            <option>First Bank</option>
+                                            <option>EcoBank</option>
+                                            <option>GT Bank</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control input-amount" id="exampleInputAmount" placeholder="Enter Amount">
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="table-button">
+                            <button type="button" class="add-a-trans"><i class="fas fa-plus"></i>ADD A TRANSACTION</button>
+                            <button type="button" class="proceed-btn">PROCEED</button>
+                        </div>
                     </div> 
 
                 </div>
